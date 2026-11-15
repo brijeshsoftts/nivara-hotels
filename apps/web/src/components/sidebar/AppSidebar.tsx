@@ -97,13 +97,13 @@ export function AppSidebar() {
           aria-hidden="true"
           strokeWidth={1}
           className="pointer-events-none absolute -bottom-7 -left-8 z-0 size-36 text-sidebar-accent opacity-50"
-        />
+        />{" "}
         <SidebarHeader className="relative z-10 h-16 shrink-0 justify-center border-b border-sidebar-border px-3 py-0 group-data-[collapsible=icon]:px-1">
           <div className="flex items-center justify-between gap-2 group-data-[collapsible=icon]:flex-col group-data-[collapsible=icon]:justify-center group-data-[collapsible=icon]:gap-1">
             <Logo
               to="/dashboard"
               compact
-              className="min-w-0 flex-1 overflow-hidden group-data-[collapsible=icon]:flex-none group-data-[collapsible=icon]:gap-0 group-data-[collapsible=icon]:[&>div:last-child]:hidden"
+              className="min-w-0 flex-1 overflow-hidden text-primary group-data-[collapsible=icon]:flex-none group-data-[collapsible=icon]:gap-0 group-data-[collapsible=icon]:[&>div:last-child]:hidden"
             />
             <SidebarTrigger
               aria-label="Collapse or expand navigation"
@@ -111,7 +111,6 @@ export function AppSidebar() {
             />
           </div>
         </SidebarHeader>
-
         <SidebarContent className="relative z-10 min-h-0 flex-1 overflow-hidden px-2 py-3">
           <nav
             aria-label="Dashboard navigation"
@@ -125,7 +124,6 @@ export function AppSidebar() {
             {groupedLinks.length > 0 && <NavMain items={groupedLinks} />}
           </nav>
         </SidebarContent>
-
         <div className="relative z-10 border-t border-sidebar-border p-3 group-data-[collapsible=icon]:p-1">
           <div className="flex min-w-0 items-center gap-1 group-data-[collapsible=icon]:justify-center">
             <Link

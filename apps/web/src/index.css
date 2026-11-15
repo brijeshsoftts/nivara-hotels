@@ -300,23 +300,23 @@
 
   --chart-5: #173f35;
 
-  /** Light sidebar*/
+  /** Light sidebar — always-dark sidebar on light content */
 
-  --sidebar: #f7f5ef;
+  --sidebar: #1a2f28;
 
-  --sidebar-foreground: #26332e;
+  --sidebar-foreground: #e2ded3;
 
-  --sidebar-primary: #173f35;
+  --sidebar-primary: #b58a4a;
 
-  --sidebar-primary-foreground: #ffffff;
+  --sidebar-primary-foreground: #1a2f28;
 
-  --sidebar-accent: #dce7df;
+  --sidebar-accent: #253e36;
 
-  --sidebar-accent-foreground: #26332e;
+  --sidebar-accent-foreground: #e8e4d9;
 
-  --sidebar-border: #dedcd3;
+  --sidebar-border: #2c4940;
 
-  --sidebar-ring: #173f35;
+  --sidebar-ring: #b58a4a;
 
   /** Geometry*/
 
@@ -414,21 +414,21 @@
 
   --chart-5: #f7f5ef;
 
-  /** Dark sidebar*/
+  /** Dark sidebar — deeper dark sidebar on dark content */
 
-  --sidebar: #1d3029;
+  --sidebar: #0f1b16;
 
-  --sidebar-foreground: #f7f5ef;
+  --sidebar-foreground: #e2ded3;
 
   --sidebar-primary: #b58a4a;
 
-  --sidebar-primary-foreground: #14231e;
+  --sidebar-primary-foreground: #0f1b16;
 
-  --sidebar-accent: #30483d;
+  --sidebar-accent: #1a2f28;
 
-  --sidebar-accent-foreground: #f7f5ef;
+  --sidebar-accent-foreground: #e8e4d9;
 
-  --sidebar-border: #3b5147;
+  --sidebar-border: #223b33;
 
   --sidebar-ring: #b58a4a;
 

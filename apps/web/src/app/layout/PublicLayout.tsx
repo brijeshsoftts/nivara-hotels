@@ -60,14 +60,16 @@ export function Logo({
         className={cn(
           "relative flex items-end justify-center overflow-hidden",
           compact
-            ? "size-7 rounded-md bg-sidebar-accent"
+            ? "size-10 rounded-md bg-sidebar-accent"
             : "h-12 w-10 rounded-t-full rounded-b-sm bg-secondary pb-1"
         )}
       >
         <Palmtree
           className={cn(
-            "absolute text-primary",
-            compact ? "bottom-0 size-5" : "-bottom-1 h-7 w-7"
+            "absolute",
+            compact
+              ? "bottom-0 size-7 text-primary not-dark:text-background"
+              : "-bottom-1 h-7 w-7 text-primary"
           )}
           strokeWidth={1.5}
         />
@@ -78,8 +80,8 @@ export function Logo({
         <span
           className={cn(
             "font-heading leading-none tracking-wide",
-            compact ? "text-lg" : "text-[26px]",
-            inverse ? "text-background" : "text-primary"
+            compact ? "text-lg text-sidebar-foreground" : "text-[26px]",
+            !compact && (inverse ? "text-background" : "text-primary")
           )}
         >
           Nivara
